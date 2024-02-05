@@ -1,3 +1,51 @@
+//***********//
+// variables //
+//***********//
+:root {
+  // solid colors
+  --sc-primary: #5c5cd6;
+  --sc-secondary: #6c68de;
+
+  // backgrounds
+  --bg-primary: #14141f;
+  --bg-secondary: #181726;
+  --bg-gradient: linear-gradient(150deg, #14141f 55%, #5c5cd6 100%);
+
+  // interactive components
+  --ic-primary: #202246;
+  --ic-secondary: #262a64;
+  --ic-tertiary: #303373;
+
+  // borders and separators
+  --bs-primary: #3c3e80;
+  --bs-secondary: #4a4a96;
+  --bs-tertiary: #5a59b1;
+
+  // texts
+  --txt-primary: #e2e1fe;
+  --txt-secondary: #b1a8ff;
+  --txt-tertiary: #272962;
+  --txt-marquee: #b1a8ff33;
+
+  // font family
+  --system-ui: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  // font size
+  --fs-sm: clamp(0.6rem, 0.1vw + 0.6rem, 0.7rem);
+  --fs-base: clamp(1rem, 0.1vw + 1rem, 1.2rem);
+  --fs-lg: clamp(1.6rem, 0.2vw + 1.6rem, 1.9rem);
+  --fs-xl: clamp(2.6rem, 0.4vw + 2.5rem, 3.1rem);
+  --fs-2xl: clamp(4.2rem, 0.6vw + 4.1rem, 5rem);
+  --fs-3xl: clamp(6.9rem, 0.9vw + 6.7rem, 8.1rem);
+  --fs-4xl: clamp(11.1rem, 1.5vw + 10.8rem, 13.2rem);
+  --fs-5xl: clamp(17.9rem, 2.4vw + 17.5rem, 21.3rem);
+  --fs-6xl: clamp(29rem, 3.9vw + 28.3rem, 34.5rem);
+
+  // transition
+  --transition: 300ms ease;
+}
+
 //*********//
 // setting //
 //*********//
@@ -18,6 +66,9 @@
 
 body {
   min-height: 100svh;
+  background-color: var(--bg-primary);
+  color: var(--txt-primary);
+  font-family: var(--system-ui);
 }
 
 section {
@@ -25,12 +76,9 @@ section {
 }
 
 img,
-picture,
-svg,
-video {
+svg {
   display: block;
   max-width: 100%;
-  height: auto;
 }
 
 h1,
@@ -49,6 +97,7 @@ p {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 li {
