@@ -2,6 +2,10 @@
 // variables //
 //***********//
 :root {
+  // CTA colors
+  --cta-primary: #ffc53d;
+  --cta-secondary: #ffd60a;
+
   // solid colors
   --sc-primary: #5c5cd6;
   --sc-secondary: #6c68de;
@@ -79,6 +83,8 @@ img,
 svg {
   display: block;
   max-width: 100%;
+  height: auto;
+  font-style: italic;
 }
 
 h1,
@@ -102,4 +108,17 @@ a {
 
 li {
   list-style: none;
+}
+
+//*****//
+// App //
+//*****//
+header {
+  width: 100%;
+  height: auto;
+  padding: 48px;
+
+  @media (max-width: 1024px) {
+    padding: 24px;
+  }
 }

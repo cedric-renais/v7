@@ -1,11 +1,12 @@
 import './App.scss';
+import Navbar from './components/navbar/Navbar';
 
 function App() {
   return (
     <>
-      <header>HEADER</header>
-      <main>MAIN</main>
-      <footer>FOOTER</footer>
+      <header>
+        <Navbar />
+      </header>
     </>
   );
 }
